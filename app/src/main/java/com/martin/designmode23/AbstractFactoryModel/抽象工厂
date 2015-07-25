@@ -1,0 +1,5 @@
+工厂模式中有: 工厂方法(Factory Method) 抽象工厂(Abstract Factory).
+这两个模式区别在于需要创建对象的复杂程度上。如果我们创建对象的方法变得复杂了,如上面工厂方法中是创建一个对象Sample,
+如果我们还有新的产品接口Sample2.
+这里假设：Sample有两个concrete类SampleA和SamleB，而Sample2也有两个concrete类Sample2A和SampleB2
+那么，我们就将上例中Factory变成抽象类,将共同部分封装在抽象类中,不同部分使用子类实现，下面就是将上例中的Factory拓展成抽象工厂:
