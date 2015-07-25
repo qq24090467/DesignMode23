@@ -16,6 +16,8 @@ import com.martin.designmode23.FactoryMethodModel.IProduct;
 import com.martin.designmode23.ProxyMode.ProxyMode;
 import com.martin.designmode23.SingleMode.SingleModeEagerly;
 import com.martin.designmode23.SingleMode.SingleModeLazybones;
+import com.martin.designmode23.TemplateMethodModel.Benchmark;
+import com.martin.designmode23.TemplateMethodModel.MethodBenchmark;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -65,5 +67,10 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(person.getBody());
         System.out.println(person.getFoot());
         System.out.println(person.getHead());
+    }
+
+    public void onTestTemplate(View view) {
+        Benchmark benchmark=new MethodBenchmark();
+        benchmark.repeat(4);
     }
 }
