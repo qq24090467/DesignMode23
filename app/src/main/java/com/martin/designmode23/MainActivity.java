@@ -11,6 +11,7 @@ import com.martin.designmode23.AdapterMode.Adapter;
 import com.martin.designmode23.BuilderMode.ManBuilder;
 import com.martin.designmode23.BuilderMode.Person;
 import com.martin.designmode23.BuilderMode.PersonDirector;
+import com.martin.designmode23.CombinationMode.CombinationMode;
 import com.martin.designmode23.FactoryMethodModel.FactoryMethodModel;
 import com.martin.designmode23.FactoryMethodModel.IProduct;
 import com.martin.designmode23.ProxyMode.ProxyMode;
@@ -79,4 +80,11 @@ public class MainActivity extends AppCompatActivity {
         StrategyMode strategyMode = new StrategyMode();
         strategyMode.test();
     }
+
+    public void onTestComposite(View view) {
+        CombinationMode combinationMode = new CombinationMode();
+        combinationMode.test();
+    }
+
+
 }
